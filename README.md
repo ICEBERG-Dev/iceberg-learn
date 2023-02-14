@@ -4,6 +4,9 @@ This repository was created for the purpose of teaching new students how to work
 # code appearance guide
 https://www.notion.so/pieceowater/Code-Appearance-Guide-f94e739542f9469fa6b95f27de984225
 
+# design reference
+https://www.figma.com/file/MrGjv6vuyCI0iU9XAHJGMc/taskman?t=xGh1x7drO128WcnQ-1
+
 # goal
 Make a web application for managing your working day.
 - todo-manager with task setting, description, time and deadlines
