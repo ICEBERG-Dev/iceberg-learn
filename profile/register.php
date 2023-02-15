@@ -7,13 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/profile/style/register.css">
      <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
-        <link href="424323https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
-
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+     <link href="424323https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <script src="../assets/jquery/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="profile.js"
     <link rel="stylesheet" href="">
     <title>IceRegistration</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -45,7 +47,7 @@
     </div>
     <form action="/profile/handlers/save_user.php" method="post">
     <div class="register-form-container">
-        <h2 class="form-title">
+        <h2 class="form-title" onclick="afds()">
             Register
         </h2>
         <div class="form-fields">
