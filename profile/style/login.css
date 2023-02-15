@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #f1f5fe;
+    line-height: 60px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.container {
+    display: flex;
+    max-width: 1600px;
+    flex-direction: row;
+}
+div1 {
+
+}
+
+.HeaderButtons {
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    text-decoration: none;
+align-content: flex-start;
+}
+
+
+.mainlogo img {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color-text {
+    color: #247FFF;
+
+}
+h1 {
+    padding-left: 100px;
+    padding-top: 65px;
+    font-family: 'Kaushan Script', cursive;
+
+
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+input {
+    height: 45px;
+    width: 100%;
+    color: #385983;
+    font-size:14px;
+    line-height:16px;
+    border: 2px solid #e9f2ff;
+    border-radius: 5px;
+    padding-left: 25px;
+}
+main {
+
+  background: #f1f5fe;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    position: absolute;
+    z-index: 1;
+    width: 534px;
+    height: 534px;
+    border-radius: 50%;
+    background: #f7faff;
+    box-shadow: 0px 4px 70px 6px rgba(217, 229, 255, 0.25);
+}
+.icebergcirle {
+
+}
+
+.register-form-container {
+    position: relative;
+    z-index: 2;
+    max-width: 415px;
+    background: #ffffff;
+    box-shadow:  0px 6px 50px rgba(217, 229, 255, 0.7);
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.form-title {
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+.form-field {
+    margin-bottom: 13px;
+}
+.button {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    display:block;
+    height: 35px;
+    background-color: #247FFF;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #0D6CF2;
+}
+a.button {
+    text-decoration: none;
+}
+h2.form-title {
+    font-size: 23px;
+}
+.divider {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.logo {
+    width: 35px;
+    height: 35px;
+}
+.mainlogo {
+
+}
+
