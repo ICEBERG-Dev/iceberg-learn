@@ -10,10 +10,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
      <link href="424323https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
     <script src="../assets/jquery/jquery.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="profile.js"
+    <script src="profile.js"></script>
     <link rel="stylesheet" href="">
     <title>IceRegistration</title>
 </head>
@@ -64,11 +61,11 @@
             </div>
 
             <div class="form-buttons">
-                <button class="button">Register</button>
-                <div class="divider">Or continue with</div>
-                <a href="" class="logo"><img src="/profile/images/googlelogo.png" alt="" width="30"></a>
-                <a href="" class="logo"><img src="/profile/images/applelogo.png" alt="" width="30"></a>
-                <a href="" class="logo"><img src="/profile/images/facebook.png" alt="" width="30"></a>
+                <button id="registerBtn" type="button" class="button">Register</button>
+<!--                <div class="divider">Or continue with</div>-->
+<!--                <a href="" class="logo"><img src="/profile/images/googlelogo.png" alt="" width="30"></a>-->
+<!--                <a href="" class="logo"><img src="/profile/images/applelogo.png" alt="" width="30"></a>-->
+<!--                <a href="" class="logo"><img src="/profile/images/facebook.png" alt="" width="30"></a>-->
 
             </div>
         </div>
