@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="">
-    <title>IceBergLogin</title>
+    <title>IceLogin</title>
 
 </head>
 <body>
@@ -48,7 +48,7 @@
               <div class="form-field">
                   <input type="text" placeholder="Email">
                   <div class="form-field">
-                      <input type="text" placeholder="Password">
+                      <input type="password" placeholder="Password">
               </div>
           </div>
               <div class="form-buttons">

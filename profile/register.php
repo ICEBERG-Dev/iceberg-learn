@@ -5,16 +5,19 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/profile/style/login.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/profile/style/register.css">
+     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+        <link href="424323https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="">
-    <title>IceBergLogin</title>
+    <title>IceRegistration</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
 </head>
+
 <body>
+
 
 
 <header>
@@ -40,17 +43,24 @@
     <div class="circle"> <h1>Welcome to <span class="color-text">Ice</span>Berg Group </h1>
 
     </div>
+    <form action="/profile/handlers/save_user.php" method="post">
     <div class="register-form-container">
         <h2 class="form-title">
-            Login In
+            Register
         </h2>
         <div class="form-fields">
             <div class="form-field">
-                <input type="text" placeholder="Email">
+                <input id="EmailReg" type="text" maxlength="20" placeholder="Email">
                 <div class="form-field">
-                    <input type="text" placeholder="Password">
+                    <input id="NicknameReg" type="text" maxlength="15" placeholder="NickName">
+                    <div class="form-field">
+                        <input id="PasswordReg" type="password" maxlength="15" placeholder="Password">
+    </form>
+<!--RegFieldsEnd-->
+
                 </div>
             </div>
+
             <div class="form-buttons">
                 <button class="button">Register</button>
                 <div class="divider">Or continue with</div>
@@ -60,7 +70,6 @@
 
             </div>
         </div>
-
 </main>
 
 

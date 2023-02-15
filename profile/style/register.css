@@ -45,11 +45,9 @@ div1 {
 
 }
 h1 {
-    padding-left: 100px;
-    padding-top: 65px;
+    padding-left: 85px;
+    width: 100%;
     font-family: 'Kaushan Script', cursive;
-
-
 }
 h2 {
     font-family: 'Montserrat', sans-serif;
