@@ -1,3 +1,62 @@
+/*Темная тема*/
+.darktheme {
+    background-color: #333;
+}
+.darktheme .login {
+    background-color: #333;
+}
+.theme-button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color: #333333;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 15px;
+}
+/*Светлая тема*/
+.whitetheme {
+    background-color: #fff;
+}
+.whitetheme .login {
+    background-color: #fff;
+}
+.whitetheme .login_header h2 {
+    color: #333;
+}
+.whitetheme .login_body-head {
+    color: #333;
+}
+.whitetheme input[type=text]{
+    border: 0.5px solid #333;
+
+}
+.whitetheme input[type=button]{
+    background-color: #000;
+    color: #fff;
+}
+.whitetheme .body_footer{
+    color: #000;
+}
+.whitetheme .body_footer a{
+    color: #000;
+}
+.whitetheme .theme-button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 15px;
+}
+
 
 .container {
     width: 100%;
@@ -11,7 +70,6 @@
     justify-content: center;
     overflow: auto;
     flex-flow: column;
-    background-color: #333;
 }
 .bgimg {
     position: absolute;
@@ -26,7 +84,6 @@
     border-radius: 15px;
     position: relative;
     z-index: 2;
-    background-color: #333333;
 }
 
 .login_inner{
