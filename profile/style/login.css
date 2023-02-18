@@ -1,12 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-html, body, a {
-    font-family: 'Fjalla One', sans-serif;
-    color: #fff;
-
-}
-
 
 .container {
     width: 100%;
@@ -43,6 +34,10 @@ html, body, a {
 }
 .login_header {
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
 }
 .login_header-logo img {
     width: 100px;
