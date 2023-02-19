@@ -9,6 +9,6 @@ document.querySelector('.button-user-data').addEventListener('click', ()=>{
     datauser[0].value.push(user_login);
     datauser[1].value.push(user_password);
     console.log(`Логин пользователя: ${datauser[0].value}`);
-    console.log(`Логин пользователя: ${datauser[1].value}`);
+    console.log(`Пароль пользователя: ${datauser[1].value}`);
 })
 
