@@ -33,12 +33,18 @@ body {
     border: none;
     background-color: #333333;
     color: #fff;
+    cursor: pointer;
 }
 .remove_button {
     border: none;
     background-color: #333333;
     color: #fff;
-    position: absolute;
-    top: -53px;
-    right: 15px;
+    cursor: pointer;
+}
+.user_task_answer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15em;
+    margin: 0 auto;
 }
