@@ -14,7 +14,7 @@ document.querySelector('.button-user-data').addEventListener('click', ()=>{
     console.log(`Логин пользователя: ${datauser[0].value}`);
     console.log(`Пароль пользователя: ${datauser[1].value}`);
     if (user_login === bdUser.login && user_password === bdUser.password) {
-        window.location.href = 'http://ice-todo/';
+        window.location.href = 'http://ice-todo/tasks/tasks.html';
     } else {
         let alert = document.createElement('p')
         alert.classList.add('alert')
