@@ -40,6 +40,7 @@ body {
     background-color: #333333;
     color: #fff;
     cursor: pointer;
+    display: none;
 }
 .user_task_answer {
     display: flex;
@@ -47,4 +48,14 @@ body {
     align-items: center;
     width: 15em;
     margin: 0 auto;
+}
+.vstext {
+    text-decoration: none;
+}
+.hdtext{
+    text-decoration: line-through;
+}
+
+.visible_button {
+    display: block;
 }

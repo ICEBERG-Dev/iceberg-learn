@@ -16,17 +16,21 @@ addTaskButton.addEventListener('click', () => {
         let userTaskAnswer = document.createElement('div');
         userTaskAnswer.classList.add('user_task_answer');
         userTaskAnswer.innerHTML = `
-        <p>${document.querySelector('.task_message').value}</p>
+        <p class = "vhtxt">${document.querySelector('.task_message').value}</p>
         <button class="remove_button"><i class="fa-solid fa-trash fa-xl"></i></button>`
 
         document.querySelector('.container_task').insertAdjacentElement('beforeend', userTaskAnswer);
         userTaskAnswer.querySelector('.fa-solid.fa-trash.fa-xl').addEventListener('click', (e)=>{removeTodo(e)})
+        userTaskAnswer.querySelector('.vhtxt').addEventListener('click', (e) => {hiddenButton(e)})
         document.querySelector('.task_message').remove();
 
     }
 
 });
-
+    const hiddenButton = (e) => {
+        e.target.classList.toggle('hdtext')
+        e.target.parentElement.querySelector('.remove_button').classList.toggle('visible_button')
+    };
     function removeTodo (event) {
         event.target.parentElement.parentElement.remove()
         // e.target.parentElement.remove()
