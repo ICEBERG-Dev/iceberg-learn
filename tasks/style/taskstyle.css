@@ -49,7 +49,7 @@ body {
     width: 15em;
     margin: 0 auto;
 }
-.vstext {
+.vhtxt {
     text-decoration: none;
 }
 .hdtext{
@@ -58,4 +58,7 @@ body {
 
 .visible_button {
     display: block;
+}
+.edit_button--close {
+    display: none;
 }

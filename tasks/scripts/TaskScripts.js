@@ -16,23 +16,35 @@ addTaskButton.addEventListener('click', () => {
         let userTaskAnswer = document.createElement('div');
         userTaskAnswer.classList.add('user_task_answer');
         userTaskAnswer.innerHTML = `
-        <p class = "vhtxt">${document.querySelector('.task_message').value}</p>
-        <button class="remove_button"><i class="fa-solid fa-trash fa-xl"></i></button>`
+       
+        <input class = "vhtxt" type="text" readonly="true" value="${document.querySelector('.task_message').value}">
+        <button class="remove_button"><i class="fa-solid fa-trash fa-xl"></i></button>
+        <button class="edit_button"><i class="fa-solid fa-pen-to-square"></i></button>`
+
 
         document.querySelector('.container_task').insertAdjacentElement('beforeend', userTaskAnswer);
+
         userTaskAnswer.querySelector('.fa-solid.fa-trash.fa-xl').addEventListener('click', (e)=>{removeTodo(e)})
         userTaskAnswer.querySelector('.vhtxt').addEventListener('click', (e) => {hiddenButton(e)})
+        userTaskAnswer.querySelector('.fa-solid.fa-pen-to-square').addEventListener('click', (e)=>{editBnt(e)})
         document.querySelector('.task_message').remove();
 
     }
 
 });
     const hiddenButton = (e) => {
-        e.target.classList.toggle('hdtext')
-        e.target.parentElement.querySelector('.remove_button').classList.toggle('visible_button')
+        if (e.target.readOnly === true) {
+            e.target.classList.toggle('hdtext');
+            e.target.parentElement.querySelector('.remove_button').classList.toggle('visible_button');
+            e.target.parentElement.querySelector('.edit_button').classList.toggle('edit_button--close');
+        };
+
     };
     function removeTodo (event) {
         event.target.parentElement.parentElement.remove()
         // e.target.parentElement.remove()
     };
 
+    function editBnt (e) {
+        e.target.parentElement.parentElement.querySelector('.vhtxt').readOnly = !e.target.parentElement.parentElement.querySelector('.vhtxt').readOnly ;
+    };
