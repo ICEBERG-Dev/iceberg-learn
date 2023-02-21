@@ -20,9 +20,15 @@ addTaskButton.addEventListener('click', () => {
         <button class="remove_button"><i class="fa-solid fa-trash fa-xl"></i></button>`
 
         document.querySelector('.container_task').insertAdjacentElement('beforeend', userTaskAnswer);
+        userTaskAnswer.querySelector('.fa-solid.fa-trash.fa-xl').addEventListener('click', (e)=>{removeTodo(e)})
         document.querySelector('.task_message').remove();
 
     }
 
 });
+
+    function removeTodo (event) {
+        event.target.parentElement.parentElement.remove()
+        // e.target.parentElement.remove()
+    };
 
