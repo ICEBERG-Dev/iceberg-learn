@@ -44,10 +44,10 @@ body {
 }
 .user_task_answer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 15em;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 .vhtxt {
     text-decoration: none;
