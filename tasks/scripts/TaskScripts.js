@@ -19,7 +19,8 @@ addTaskButton.addEventListener('click', () => {
        
         <input class = "vhtxt" type="text" readonly="true" value="${document.querySelector('.task_message').value}">
         <button class="remove_button"><i class="fa-solid fa-trash fa-xl"></i></button>
-        <button class="edit_button"><i class="fa-solid fa-pen-to-square"></i></button>`
+        <button class="edit_button"><i class="fa-solid fa-pen-to-square fa-xl"></i></button>
+        <button class="complete_button"><i class="fa-solid fa-check fa-xl"></i></button>`
 
 
         document.querySelector('.container_task').insertAdjacentElement('beforeend', userTaskAnswer);
@@ -27,6 +28,7 @@ addTaskButton.addEventListener('click', () => {
         userTaskAnswer.querySelector('.fa-solid.fa-trash.fa-xl').addEventListener('click', (e)=>{removeTodo(e)})
         userTaskAnswer.querySelector('.vhtxt').addEventListener('click', (e) => {hiddenButton(e)})
         userTaskAnswer.querySelector('.fa-solid.fa-pen-to-square').addEventListener('click', (e)=>{editBnt(e)})
+        userTaskAnswer.querySelector('.fa-solid.fa-check.fa-xl').addEventListener('click', (e)=>{completeBtn(e)})
         document.querySelector('.task_message').remove();
 
     }
@@ -46,5 +48,13 @@ addTaskButton.addEventListener('click', () => {
     };
 
     function editBnt (e) {
-        e.target.parentElement.parentElement.querySelector('.vhtxt').readOnly = !e.target.parentElement.parentElement.querySelector('.vhtxt').readOnly ;
+        e.target.parentElement.parentElement.querySelector('.vhtxt').readOnly = !e.target.parentElement.parentElement.querySelector('.vhtxt').readOnly;
+        e.target.parentElement.classList.toggle('edit_button--close');
+        e.target.parentElement.parentElement.querySelector('.complete_button').classList.toggle('complete_button--visible');
+    };
+
+    let completeBtn = (e) => {
+        e.target.parentElement.parentElement.querySelector('.vhtxt').readOnly = true;
+        e.target.parentElement.parentElement.querySelector('.edit_button').classList.toggle('edit_button--close');
+        e.target.parentElement.classList.toggle('complete_button--visible');
     };

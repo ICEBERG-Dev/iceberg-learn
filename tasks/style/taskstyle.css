@@ -51,6 +51,9 @@ body {
 }
 .vhtxt {
     text-decoration: none;
+    background: transparent;
+    border: none;
+    color: #fff;
 }
 .hdtext{
     text-decoration: line-through;
@@ -59,6 +62,22 @@ body {
 .visible_button {
     display: block;
 }
+.edit_button {
+    background-color: #333333;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
 .edit_button--close {
     display: none;
+}
+.complete_button {
+    display: none;
+    background-color: #333333;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+.complete_button--visible {
+    display: block;
 }
