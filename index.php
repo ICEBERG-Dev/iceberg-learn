@@ -10,6 +10,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Taskman</h1>
+<div class="text" style="text-align: center; padding-top: 20%;">
+<a style="text-decoration: none; color: black; font-size: 50px;" href="profile/login.php">Login</a>
+<br><br><br><br>
+<a style="text-decoration: none; color: black; font-size: 50px;" href="profile/register.php">Register</a>
+</div>
 </body>
 </html>

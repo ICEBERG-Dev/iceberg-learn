@@ -28,40 +28,44 @@
          </div>
     <div>
     <a class="HeaderButtons" href="">SignIn</a>
-    <a class="HeaderButtons" href="">Register</a>
+    <a class="HeaderButtons" href="register.php">Register</a>
     </div>
 
 </div>
     </div>
 </header>
 
- <main>
+<main>
 
-     <div class="circle"> <h1>Welcome to <span class="color-text">Ice</span>Berg Group </h1>
+    <div class="circle"> <h1>Welcome to <span class="color-text">Ice</span>Berg Group </h1>
 
-     </div>
-     <div class="register-form-container">
-         <h2 class="form-title">
-             Login In
-         </h2>
-          <div class="form-fields">
-              <div class="form-field">
-                  <input type="text" placeholder="Email">
-                  <div class="form-field">
-                      <input type="password" placeholder="Password">
-              </div>
-          </div>
-              <div class="form-buttons">
-                  <button class="button">Login In</button>
-                  <div class="divider">Or continue with</div>
-                  <a href="" class="logo"><img src="/profile/images/googlelogo.png" alt="" width="30"></a>
-                  <a href="" class="logo"><img src="/profile/images/applelogo.png" alt="" width="30"></a>
-                  <a href="" class="logo"><img src="/profile/images/facebook.png" alt="" width="30"></a>
+    </div>
+    <form action="/profile/handlers/login.php" method="post">
+        <div class="register-form-container">
+            <h2 class="form-title" onclick="afds()">
+                Log in
+            </h2>
+            <div class="form-fields">
+                <div class="form-field">
+                    <input id="Email" name="email" type="text" maxlength="20" placeholder="Email">
+                        <div class="form-field">
+                            <input id="Password" name="password" type="password" maxlength="15" placeholder="Password">
+    </form>
+    <!--RegFieldsEnd-->
 
-              </div>
-     </div>
+    </div>
+    </div>
 
- </main>
+    <div class="form-buttons">
+        <button id="registerBtn" type="submit" class="button">Register</button>
+        <!--                <div class="divider">Or continue with</div>-->
+        <!--                <a href="" class="logo"><img src="/profile/images/googlelogo.png" alt="" width="30"></a>-->
+        <!--                <a href="" class="logo"><img src="/profile/images/applelogo.png" alt="" width="30"></a>-->
+        <!--                <a href="" class="logo"><img src="/profile/images/facebook.png" alt="" width="30"></a>-->
+
+    </div>
+    </div>
+</main>
 
 
 

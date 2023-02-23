@@ -29,7 +29,7 @@
                 <a class="HeaderButtons" href="">Pages</a>
             </div>
             <div>
-                <a class="HeaderButtons" href="">SignIn</a>
+                <a class="HeaderButtons" href="login.php">SignIn</a>
                 <a class="HeaderButtons" href="">Register</a>
             </div>
 
@@ -49,11 +49,11 @@
         </h2>
         <div class="form-fields">
             <div class="form-field">
-                <input id="EmailReg" type="text" maxlength="20" placeholder="Email">
+                <input id="EmailReg" name="email" type="text" maxlength="20" placeholder="Email">
                 <div class="form-field">
-                    <input id="NicknameReg" type="text" maxlength="15" placeholder="NickName">
+                    <input id="NicknameReg" name="name" type="text" maxlength="15" placeholder="NickName">
                     <div class="form-field">
-                        <input id="PasswordReg" type="password" maxlength="15" placeholder="Password">
+                        <input id="PasswordReg" name="password" type="password" maxlength="15" placeholder="Password">
     </form>
 <!--RegFieldsEnd-->
 
@@ -61,7 +61,7 @@
             </div>
 
             <div class="form-buttons">
-                <button id="registerBtn" type="button" class="button">Register</button>
+                <button id="registerBtn" type="submit" class="button">Register</button>
 <!--                <div class="divider">Or continue with</div>-->
 <!--                <a href="" class="logo"><img src="/profile/images/googlelogo.png" alt="" width="30"></a>-->
 <!--                <a href="" class="logo"><img src="/profile/images/applelogo.png" alt="" width="30"></a>-->
