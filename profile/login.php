@@ -8,7 +8,7 @@
      <link rel="stylesheet" href="/profile/style/login.css">
        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">-->
 
     <link rel="stylesheet" href="">
     <title>IceLogin</title>
@@ -38,36 +38,30 @@
 <main>
 
     <div class="circle"> <h1>Welcome to <span class="color-text">Ice</span>Berg Group </h1>
-
     </div>
     <form action="/profile/handlers/login.php" method="post">
         <div class="register-form-container">
-            <h2 class="form-title" onclick="afds()">
-                Log in
-            </h2>
+            <h2 class="form-title" onclick="afds()">Log in</h2>
             <div class="form-fields">
                 <div class="form-field">
                     <input id="Email" name="email" type="text" maxlength="20" placeholder="Email">
                         <div class="form-field">
-                            <input id="Password" name="password" type="password" maxlength="15" placeholder="Password">
+                            <input name="password" type="password" maxlength="15" placeholder="Password">
+                        </div>
+                </div>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="loginButton">Login</button>
+            </div>
+            <div class="message none"></div>
+        </div>
+        </div>
     </form>
-    <!--RegFieldsEnd-->
 
-    </div>
-    </div>
-
-    <div class="form-buttons">
-        <button id="registerBtn" type="submit" class="button">Register</button>
-        <!--                <div class="divider">Or continue with</div>-->
-        <!--                <a href="" class="logo"><img src="/profile/images/googlelogo.png" alt="" width="30"></a>-->
-        <!--                <a href="" class="logo"><img src="/profile/images/applelogo.png" alt="" width="30"></a>-->
-        <!--                <a href="" class="logo"><img src="/profile/images/facebook.png" alt="" width="30"></a>-->
-
-    </div>
-    </div>
 </main>
 
 
-
+<script src="../assets/jquery/jquery-3.4.1.min.js"></script>
+<script src="profile.js"></script>
 </body>
 </html>

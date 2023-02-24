@@ -1,38 +1,78 @@
 <?php
+session_start();
 $db = new mysqli("localhost", "root", "root", "todo_project");
 
 
 $email = $_POST['email'];
 $name = $_POST['name'];
 $password= $_POST['password'];
+$password_confirm= $_POST['password_confirm'];
 
-if($email === '' && $password === '') {
-    echo('data missing');
-} else {
-    //если логин и пароль введены, то обрабатываем их, чтобы теги и скрипты не работали, мало ли что люди могут ввести
-    $email = stripslashes($email);
-    $email = htmlspecialchars($email);
-    $password = stripslashes($password);
-    $password = htmlspecialchars($password);
-//удаляем лишние пробелы
-    $email = trim($email);
-    $password = md5(md5(trim($_POST['password'])));
-// подключаемся к базе
-    $result = $db->query("SELECT id FROM users WHERE email='$email'");
-    $data = mysqli_fetch_assoc($result);
-    if (!empty($data['id'])) {
-        exit ("Извините, введённый вами логин уже зарегистрирован. Введите другой логин.");
-    }
-// если такого нет, то сохраняем данные
-    $result2 = mysqli_query ($db,"INSERT INTO users (email, name, password) VALUES ('$email', '$name', '$password')");
+$check_login = mysqli_query($db, "SELECT * FROM `users` WHERE `email` = '$email'");
+if (mysqli_num_rows($check_login) > 0) {
+    $response = [
+        "status" => false,
+        "type" => 1,
+        "message" => "Такой логин уже существует",
+        "fields" => ['email']
+    ];
 
-// Проверяем, есть ли ошибки
-    if ($result2=='TRUE')
-    {
-        echo "Вы успешно зарегистрированы! Теперь вы можете зайти на сайт. <a href='/'>Главная страница</a>";
-    }
-    else {
-        echo "Ошибка! Вы не зарегистрированы.";
-    }
+    echo json_encode($response);
+    die();
 }
+
+$error_fields = [];
+
+if ($email === '') {
+    $error_fields[] = 'email';
+}
+
+if ($name === '') {
+    $error_fields[] = 'name';
+}
+
+if ($password === '') {
+    $error_fields[] = 'password';
+}
+
+if ($password_confirm === '') {
+    $error_fields[] = 'password_confirm';
+}
+
+if (!empty($error_fields)) {
+    $response = [
+        "status" => false,
+        "type" => 1,
+        "message" => "Проверьте правильность полей",
+        "fields" => $error_fields
+    ];
+
+    echo json_encode($response);
+
+    die();
+}
+
+if ($password === $password_confirm) {
+    $password = md5($password);
+
+    mysqli_query($db, "INSERT INTO `users` (`email`, `name`, `password`, `password_confirm`) VALUES ('$email', '$name', '$password', '$password_confirm')");
+
+    $response = [
+        "status" => true,
+        "message" => "Регистрация прошла успешно!",
+    ];
+    echo json_encode($response);
+    die();
+
+
+} else {
+    $response = [
+        "status" => false,
+        "message" => "Пароли не совпадают",
+    ];
+    echo json_encode($response);
+    die();
+}
+
+
 ?>

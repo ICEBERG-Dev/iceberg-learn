@@ -108,7 +108,7 @@ main {
 .form-field {
     margin-bottom: 13px;
 }
-.button {
+.loginButton {
     padding-left: 20px;
     padding-right: 20px;
     text-transform: uppercase;
@@ -120,14 +120,31 @@ main {
     border-radius: 5px;
     color: #fff;
     text-align: center;
-    line-height: 45px;
     cursor: pointer;
 }
-.button:hover {
+
+.loginButton:hover {
     background-color: #0D6CF2;
 }
-a.button {
+
+a.loginButton {
     text-decoration: none;
+}
+
+.message {
+    background-color: #247FFF;
+    color: #fff;
+    border: 2px solid black ;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.none {
+    display: none;
 }
 h2.form-title {
     font-size: 23px;

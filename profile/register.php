@@ -8,14 +8,12 @@
     <link rel="stylesheet" href="/profile/style/register.css">
      <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
-     <link href="424323https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
-    <script src="../assets/jquery/jquery.js"></script>
-    <script src="profile.js"></script>
-    <link rel="stylesheet" href="">
+<!--     <link href="424323https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">-->
     <title>IceRegistration</title>
 </head>
 
 <body>
+
 
 
 
@@ -39,39 +37,26 @@
 
 <main>
 
-    <div class="circle"> <h1>Welcome to <span class="color-text">Ice</span>Berg Group </h1>
-
-    </div>
-    <form action="/profile/handlers/save_user.php" method="post">
-    <div class="register-form-container">
-        <h2 class="form-title" onclick="afds()">
-            Register
-        </h2>
-        <div class="form-fields">
-            <div class="form-field">
-                <input id="EmailReg" name="email" type="text" maxlength="20" placeholder="Email">
+    <div class="circle"> <h1>Welcome to <span class="color-text">Ice</span>Berg Group </h1></div>
+    <form class="form">
+        <div class="register-form-container">
+            <h2 class="form-title" onclick="afds()">Register</h2>
+            <div class="form-fields">
                 <div class="form-field">
-                    <input id="NicknameReg" name="name" type="text" maxlength="15" placeholder="NickName">
-                    <div class="form-field">
-                        <input id="PasswordReg" name="password" type="password" maxlength="15" placeholder="Password">
-    </form>
-<!--RegFieldsEnd-->
-
+                    <input name="email" type="text" maxlength="20" placeholder="Email">
+                    <input name="name" type="text" maxlength="15" placeholder="NickName">
+                    <input name="password" type="password" maxlength="15" placeholder="Password">
+                    <input name="password_confirm" type="password" maxlength="15" placeholder="Password confirm">
+                    <button type="submit" class="regButton">Register</button>
+                    <div class="message none"></div>
                 </div>
             </div>
-
-            <div class="form-buttons">
-                <button id="registerBtn" type="submit" class="button">Register</button>
-<!--                <div class="divider">Or continue with</div>-->
-<!--                <a href="" class="logo"><img src="/profile/images/googlelogo.png" alt="" width="30"></a>-->
-<!--                <a href="" class="logo"><img src="/profile/images/applelogo.png" alt="" width="30"></a>-->
-<!--                <a href="" class="logo"><img src="/profile/images/facebook.png" alt="" width="30"></a>-->
-
-            </div>
         </div>
+    </form>
 </main>
 
 
-
+<script src="../assets/jquery/jquery-3.4.1.min.js"></script>
+<script src="profile.js"></script>
 </body>
 </html>
