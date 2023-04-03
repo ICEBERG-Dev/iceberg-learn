@@ -18,7 +18,7 @@ Make a web application for managing your working day.
 #### Goal: To learn how to work in a team with other developers, to develop a training project - todo manager
 
 <details>
-<summary>Detail</summary>
+<summary>Details</summary>
 
 - The beginning. General concepts and information about the upcoming work. Git version control system. Teamwork. Pipeline of each developer's work.
 - HTML and CSS. Basics of layout and styling. 
@@ -34,3 +34,22 @@ Make a web application for managing your working day.
 </details>
 
 
+### Training Plan for Backend Developer
+#### Technologies: JS, PHP, SQL, MySQL
+#### Goal: To learn how to work in a team with other developers, to develop a training project - todo manager
+
+<details>
+<summary>Details</summary>
+
+- The beginning. General concepts and information about the upcoming work. Git version control system. Teamwork. Pipeline of each developer's work.
+- PHP basics. Variables, data types, operators.
+- Loops and conditional operators.
+- Functions and arrays in PHP.
+- Working with user input.
+- CRUD. Methods of working with data.
+- Connection to the database. Basic database queries.
+- User SESSION, COOKIES. (extra)
+- Http, https, ssl. Basic concepts of server operation.
+- The concept of RESTful API. Http request statuses
+
+</details>
