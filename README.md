@@ -12,3 +12,25 @@ Make a web application for managing your working day.
 - todo-manager with task setting, description, time and deadlines
 - setting up a personal account
 - a system of user accesses to view other people's tasks (superuser, manager, employee)
+
+### Training Plan for Frontend Developer
+#### Technologies: HTML, CSS, JS, jQuery
+#### Goal: To learn how to work in a team with other developers, to develop a training project - todo manager
+
+<details>
+<summary>Detail</summary>
+
+- The beginning. General concepts and information about the upcoming work. Git version control system. Teamwork. Pipeline of each developer's work.
+- HTML and CSS. Basics of layout and styling. 
+- JavaScript. Basic concepts of JavaScript and DOM elements on a page.
+- Repeating
+- JavaScript. Elementary data types. Manipulation of data and elements on the page
+- JavaScript. Complex data types.
+- JavaScript. Syntactic constructions of the language.
+- JavaScript. Algorithmization and functional programming.
+- JavaScript. Asynchrony, AJAX
+- Fixing the material.
+
+</details>
+
+
