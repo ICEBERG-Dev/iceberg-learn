@@ -1,0 +1,177 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+body {
+    margin: 0;
+ /*url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');*/
+ /*   font-family: "ari";*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.form_auth_block{
+    width: 100%;
+    /*max-width: 1400px;*/
+    /*height: 100vh;*/
+    margin: 0 auto;
+    background: url("https://kartinkin.net/pics/uploads/posts/2022-08/thumbs/1661330403_2-kartinkin-net-p-fon-dlya-avtorizatsii-krasivo-2.jpg");
+    background-size: cover;
+    /*border-radius: 10px;*/
+}
+.form_auth_block_content{
+    padding-top: 10%;
+}
+.form_auth_block_head_text{
+    display: block;
+    text-align: center;
+    padding: 0px;
+    font-size: 25px;
+    font-weight: 600;
+    background: rgba(0%);
+    opacity: 0.7;
+}
+.form_auth_block label{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0%);
+    opacity: 0.6;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.form_auth_block input {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 45px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    border: none;
+    box-shadow: 1px 3px 13px 0px #6c6666;
+}
+.form_auth_button{
+    --green: blue;
+    font-size: 15px;
+    padding: 0.8em 3.7em;
+    /*letter-spacing: 0.09em;*/
+    /*position: relative;*/
+    /*font-family: inherit;*/
+    border-radius: 0.8em;
+    /*overflow: hidden;*/
+    transition: all 0.3s;
+    line-height: 1.4em;
+    /*border: 2px solid var(--green);*/
+    background: linear-gradient(to right, rgb(45 22 197) 1%, #2a8add 40%,#549dd1 60% , rgb(223 223 223) 100%);
+    color: white;
+    border: none;
+    /*box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);*/
+}
+
+.form_auth_button:hover {
+    color: #ffffff;
+    box-shadow: 0 0 10px rgb(10 185 217), 0 0 9px 3px rgba(27, 253, 156, 0.2)
+}
+
+/*button:before {*/
+/*    content: "";*/
+/*    position: center;*/
+/*    left: -4em;*/
+/*    width: 10px;*/
+/*    height: 100%;*/
+/*    top: 0;*/
+/*    transition: transform .4s ease-in-out;*/
+/*    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);*/
+/*}*/
+
+/*button:hover:before {*/
+    /*transform: translateX(15em);*/
+/*}*/
+.form_auth_style{
+    width: 350px;
+    height: 550px;
+    max-height: 600px;
+    padding: 0.7em 2.5em;
+    letter-spacing: 0.09em;
+    border-radius: 0.9em;
+    text-align: center;
+    margin: 0 auto;
+    background: white;
+}
+.form_auth_facebook{
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 3px;
+    bottom: 50px;
+    border-radius: 91px;
+    background: #e0e0e0;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/640px-Facebook_Logo_%282019%29.png");
+    background-size: cover;
+    box-shadow:  13px 13px 27px #7d7d7d,
+    -13px -13px 27px #ffffff;
+}
+.form_auth_inst{
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 1px;
+    bottom: 100px;
+    border-radius: 91px;
+    background: #e0e0e0;
+    background: url("https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-instagram-icon-logo.png");
+    background-size: cover;
+    box-shadow: -13px 15px 27px #ffff;
+}
+.input{
+    margin-bottom: 25px;
+}
+.sign_in{
+    font-weight: 500;
+    font-size: 20px;
+}
+.password{
+   padding: 5px 10px;
+    background-color: #2a8add;
+    border-radius: 5px;
+    width: fit-content;
+    color: white;
+    font-weight: 500;
+    margin: 10px;
+    cursor: pointer;
+}
+.translate{
+    width: 70px;
+    height: 40px;
+    --green: white;
+    font-size: 15px;
+    /*padding: 0.8em 3.7em;*/
+    /*letter-spacing: 0.09em;*/
+    /*position: relative;*/
+    /*font-family: inherit;*/
+    border-radius: 0.8em;
+    /*overflow: hidden;*/
+    transition: all 0.3s;
+    line-height: 1.4em;
+    text-align: center;
+    /*border: 2px solid var(--green);*/
+    background: linear-gradient(to right, rgb(95 94 100) 1%, #769095 40%,#a2b9c9 60% , rgb(213 148 148) 100%);
+    color: white;
+    border: none;
+    /*box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);*/
+}
+
+.form_auth_button:hover {
+    color: #ffffff;
+    box-shadow: 0 0 10px rgb(10 185 217), 0 0 9px 3px rgba(27, 253, 156, 0.2)
+}
+}
+
+

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:border="http://www.w3.org/1999/xhtml"
+      xmlns:background="http://www.w3.org/1999/xhtml" xmlns:padding="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Autorization</title>
+ <link  rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="form_auth_block">
+    <div class="form_auth_block_content">
+
+        <div class="form_auth_style">
+             <label class="sign_in">Sign in</label>
+
+            <label id="rus"> Email</label>
+            <input type="email" class="input" name="auth_email" placeholder="Email" required oninput="checkEmail(this.value)">
+            <label id="russ"> password</label>
+            <input oninput="togglePasswordBtn(this.value)" id="authpassword" class="input" type="password" name="auth_password" placeholder="password" required>
+            <div id="showPasswordBtn" style="display: none" class="password" type="text" onclick="showPassword(this, document.getElementById('authpassword'))">Показать пароль</div>
+            <button onclick="register()" class="form_auth_button" type="submit" name="form_auth_submit">Sign in</button>
+            <label id="russss">Or login with</label>
+            <button class="form_auth_facebook" type="submit" name="form_auth_submit">
+<!--                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" height="25px" width="25px">-->
+            </button>
+            <button class="form_auth_inst" type="submit" name="form_auth_submit"></button>
+            <select onchange="handleSelector()" id="selector">
+                <option value="1">odin</option>
+                <option value="2">dva</option>
+                <option value="3">tri</option>
+                <option value="4">chetire</option>
+                <option value="5">qwerty</option>
+            </select>
+            <button onclick="changeLanguage()" class="translate"> Rus </button>
+        </div>
+
+    </div>
+</div>
+<script src="autorization.js">
+</script>
+</body>
+</html>
